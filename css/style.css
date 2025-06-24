@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #f2f7ff, #e1eaff);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-banner {
+    width: 100%;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #4a90e2, #3578e5);
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero-banner h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.brand {
+    font-weight: bold;
+    color: #ffeb3b;
+}
+
+.container-id {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.upload-tile, .footer-tile {
+    margin-top: 40px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.upload-tile h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #3578e5;
+}
+
+.footer-tile p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff5722;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+
