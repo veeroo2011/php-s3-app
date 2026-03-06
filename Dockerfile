@@ -13,5 +13,13 @@ WORKDIR /var/www/html
 # Copy project files
 COPY . .
 
+# Create Apache alias so /app points to the root site
+RUN echo "Alias /app /var/www/html" > /etc/apache2/conf-available/app.conf \
+ && echo "<Directory /var/www/html>" >> /etc/apache2/conf-available/app.conf \
+ && echo "    AllowOverride All" >> /etc/apache2/conf-available/app.conf \
+ && echo "    Require all granted" >> /etc/apache2/conf-available/app.conf \
+ && echo "</Directory>" >> /etc/apache2/conf-available/app.conf \
+ && a2enconf app
+
 # Expose HTTP port
 EXPOSE 8081
